@@ -1,7 +1,7 @@
 ScreenGrabber
 =============
 
-A minimal Java application that grabs a screenshot periodically.
+A minimal Java application that periodcally grabs a screenshot.
 
 License & Copyright
 -------------------
