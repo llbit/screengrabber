@@ -1,0 +1,22 @@
+<project name="ScreenGrabber" default="jar">
+	<target name="build">
+		<mkdir dir="bin"/>
+		<javac
+			encoding="utf-8"
+			debug="false"
+			nowarn="false"
+			destdir="bin"
+			includeantruntime="false">
+			<src path="src"/>
+		</javac>
+	</target>
+	<target name="jar" depends="build">
+		<jar destfile="ScreenGrabber.jar">
+			<fileset dir="bin"/>
+			<manifest>
+				<attribute name="Main-Class"
+					value="se.llbit.screengrabber.ScreenGrabber" />
+			</manifest>
+		</jar>
+	</target>
+</project>
